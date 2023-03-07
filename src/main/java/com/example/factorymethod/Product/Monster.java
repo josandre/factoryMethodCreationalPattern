@@ -1,25 +1,39 @@
-package com.example.factorymethod.Model;
+package com.example.factorymethod.Product;
 
-public class Monster {
+public abstract class Monster {
+
+    private int id;
     private String name;
     private int upperExtremity;
     private int lowerExtremity;
     private String body;
-    private boolean tile;
+    private boolean tail;
     private String habitat;
     private String type1;
     private String type2;
 
-    public Monster(String name, int upperExtremity, int lowerExtremity, String body, boolean tile, String habitat, String type1, String type2) {
+    private int life;
+
+    private int force;
+
+    private int defense;
+
+    public Monster(int id, String name, int upperExtremity, int lowerExtremity, String body, boolean tail, String habitat, String type1, String type2, int life, int force, int defense) {
+        this.id = id;
         this.name = name;
         this.upperExtremity = upperExtremity;
         this.lowerExtremity = lowerExtremity;
         this.body = body;
-        this.tile = tile;
+        this.tail = tail;
         this.habitat = habitat;
         this.type1 = type1;
         this.type2 = type2;
+        this.life = life;
+        this.force = force;
+        this.defense = defense;
     }
+
+    public Monster(){}
 
     public String getName() {
         return name;
@@ -53,12 +67,12 @@ public class Monster {
         this.body = body;
     }
 
-    public boolean isTile() {
-        return tile;
+    public boolean isTail() {
+        return tail;
     }
 
-    public void setTile(boolean tile) {
-        this.tile = tile;
+    public void setTail(boolean tail) {
+        this.tail = tail;
     }
 
     public String getHabitat() {
@@ -85,6 +99,40 @@ public class Monster {
         this.type2 = type2;
     }
 
+    public int getLife() {
+        return life;
+    }
+
+    public void setLife(int life) {
+        this.life = life;
+    }
+
+    public int getForce() {
+        return force;
+    }
+
+    public void setForce(int force) {
+        this.force = force;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
+
     @Override
     public String toString() {
         return "Monster{" +
@@ -92,10 +140,13 @@ public class Monster {
                 ", upperExtremity=" + upperExtremity +
                 ", lowerExtremity=" + lowerExtremity +
                 ", body='" + body + '\'' +
-                ", tile=" + tile +
+                ", tail=" + tail +
                 ", habitat='" + habitat + '\'' +
                 ", type1='" + type1 + '\'' +
                 ", type2='" + type2 + '\'' +
+                ", life=" + life +
+                ", force=" + force +
+                ", defense=" + defense +
                 '}';
     }
 }

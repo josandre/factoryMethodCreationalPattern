@@ -9,9 +9,11 @@ module com.example.factorymethod {
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
     requires com.fasterxml.jackson.databind;
+    requires org.json;
 
     opens com.example.factorymethod to javafx.fxml;
     exports com.example.factorymethod;
     exports com.example.factorymethod.View;
-
+    exports com.example.factorymethod.ConcreteProduct;
+    exports com.example.factorymethod.Product;
 }
