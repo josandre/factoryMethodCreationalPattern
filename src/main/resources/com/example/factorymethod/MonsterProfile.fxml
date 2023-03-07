@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.factorymethod.View.MonsterProfile">
+   <children>
+      <Label fx:id="IdName" layoutX="349.0" layoutY="34.0" prefHeight="47.0" prefWidth="240.0" text="Monstername" textAlignment="CENTER" textFill="#511919">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="93.0" prefHeight="23.0" prefWidth="53.0" text="I have ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="93.0" prefHeight="23.0" prefWidth="86.0" text="and I have">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="upperExtremity" layoutX="208.0" layoutY="93.0" prefHeight="23.0" prefWidth="24.0" text="Ca">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lowerExtremity" layoutX="456.0" layoutY="93.0" prefHeight="23.0" prefWidth="32.0" text="Ca">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="124.0" prefHeight="22.0" prefWidth="86.0" text="My body is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="body" layoutX="251.0" layoutY="124.0" prefHeight="17.0" prefWidth="86.0" text="body">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="tail" layoutX="359.0" layoutY="125.0" prefHeight="22.0" prefWidth="128.0" text="tail">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="49.0" prefHeight="17.0" prefWidth="86.0" text="Hi I am" textFill="#8a0e0e">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="live" layoutX="562.0" layoutY="126.0" prefHeight="22.0" prefWidth="103.0" text="live">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="tail11" layoutX="487.0" layoutY="125.0" prefHeight="22.0" prefWidth="63.0" text=", I live in:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="live1" layoutX="160.0" layoutY="189.0" prefHeight="22.0" prefWidth="116.0" text="My types are:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="type1" layoutX="301.0" layoutY="219.0" prefHeight="22.0" prefWidth="103.0" text="my types are" textFill="#062edd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="type2" layoutX="301.0" layoutY="251.0" prefHeight="22.0" prefWidth="103.0" text="my types are" textFill="#5974c9">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="233.0" fitWidth="111.0" layoutX="635.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ghost.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="450.0" layoutY="156.0" prefHeight="22.0" prefWidth="76.0" text=", my life is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="life" layoutX="526.0" layoutY="156.0" prefHeight="22.0" prefWidth="32.0" text="my life is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="156.0" prefHeight="22.0" prefWidth="95.0" text="My force is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="force" layoutX="247.0" layoutY="156.0" prefHeight="22.0" prefWidth="32.0" text="my life is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="156.0" prefHeight="22.0" prefWidth="138.0" text="and my defense is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="defense" layoutX="418.0" layoutY="156.0" prefHeight="22.0" prefWidth="32.0" text="my life is:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="IdName1" layoutX="148.0" layoutY="285.0" prefHeight="47.0" prefWidth="473.0" text="Thanks! for reading about. See you!!!!" textFill="#511919">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="342.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleBack" text="Back" textFill="#84208a" />
+      <ImageView fitHeight="111.0" fitWidth="128.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/franky.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="237.0" layoutY="93.0" prefHeight="23.0" prefWidth="138.0" text="upper extremities,">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="93.0" prefHeight="23.0" prefWidth="138.0" text="lower extremities">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="222.0" text="1." textFill="#1530e1" />
+      <Label layoutX="282.0" layoutY="254.0" text="2." textFill="#6476ae" />
+   </children>
+</AnchorPane>
